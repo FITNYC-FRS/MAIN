@@ -4,7 +4,7 @@ FIT's Faculty Research Space is an interdisciplinary lab space intended to foste
 
 The FRS is staffed by a full-time IT technician with experience in academic and emerging technologies and with a strong skillset in multiple software packages such as Adobe Creative Suite and various 3D software: Rhino, Autodesk Fusion360, SketchUp Pro, etc.
 
-Documentation of the processes and physical artifacts will be maintained to create a knowledge repository located here on this github.
+Documentation of the processes and resource materials will be maintained to create a knowledge repository located here on this github.
 
 **CURRENT TOPICS COVERED:**
 \
