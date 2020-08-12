@@ -6,7 +6,7 @@ This code is the same as the example provided by Arduino called DEBOUNCE so you 
 OR
 
 Insert code below this to create a sketch:
-
+'''
 /*
   Debounce
 
@@ -82,5 +82,5 @@ void loop() {
   // save the reading. Next time through the loop, it'll be the lastButtonState:
   lastButtonState = reading;
 }
-
+'''
 
