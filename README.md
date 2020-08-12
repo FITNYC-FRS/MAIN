@@ -10,4 +10,4 @@ Documentation of the processes and physical artifacts will be maintained to crea
 \
 [Arduino](/ARDUINO)\
 [Augmented Reality](/AR)\
-[Virtual Reality](/VR)\
+[Virtual Reality](/VR)
