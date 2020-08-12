@@ -6,8 +6,3 @@ The FRS is staffed by a full-time IT technician with experience in academic and 
 
 Documentation of the processes and resource materials will be maintained to create a knowledge repository located here on this github.
 
-**CURRENT TOPICS COVERED:**
-\
-[Arduino](/ARDUINO)\
-[Augmented Reality](/AR)\
-[Virtual Reality](/VR)
