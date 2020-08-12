@@ -2,26 +2,26 @@
 
 This folder contains code from example projects.
 
-Basics:
-To get started working with Arduino you will need to either install the software or work online:
+Basics:\
+To get started working with Arduino you will need to either install the software or work online:\
+\
+Download Arduino IDE - [download software](https://www.arduino.cc/en/main/software)\
+Getting Started with Arduino - [online editor guide](https://create.arduino.cc)\
+\
+Introduction tutorials:\
+[Intro to Arduino](ARDUINO/Resources/intro_arduino.pdf)\
+[Setting up and getting started](ARDUINO/Resources/arduino_setting_up.pdf)\
+[Circuit and button basics](ARDUINO/Resources/arduino_buttons_circuit_basics.pdf)\
+[Digital input/output](ARDUINO/Resources/arduino_creating_states.pdf)\
+[Analog input/output](ARDUINO/Resources/arduino_analog_read.pdf)\
 
-Download Arduino IDE - [download software](https://www.arduino.cc/en/main/software)
-Getting Started with Arduino - [online editor guide](https://create.arduino.cc)
 
-Introduction tutorials:
-[Intro to Arduino](ARDUINO/Resources/intro_arduino.pdf)
-[Setting up and getting started](ARDUINO/Resources/arduino_setting_up.pdf)
-[Circuit and button basics](ARDUINO/Resources/arduino_buttons_circuit_basics.pdf)
-[Digital input/output](ARDUINO/Resources/arduino_creating_states.pdf)
-[Analog input/output](ARDUINO/Resources/arduino_analog_read.pdf)
-
-
-**Push a button and turn an LED off/on**
-*[Code](ARDUINO/Code/arduino_analog_input_output)
-Components in the circuit:
-LED
-Resistor(s)
-Momentary Switch (Button)*
+**Push a button and turn an LED off/on**\
+*[Code](ARDUINO/Code/arduino_analog_input_output)\
+Components in the circuit:\
+LED\
+Resistor(s)\
+Momentary Switch (Button)*\
 
 
 **Turn a dial to dim a light**
