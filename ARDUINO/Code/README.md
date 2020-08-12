@@ -9,15 +9,15 @@ Download Arduino IDE - [download software](https://www.arduino.cc/en/main/softwa
 Getting Started with Arduino - [online editor guide](https://create.arduino.cc)\
 \
 Introduction tutorials:\
-[Intro to Arduino](ARDUINO/Resources/intro_arduino.pdf)\
-[Setting up and getting started](ARDUINO/Resources/arduino_setting_up.pdf)\
-[Circuit and button basics](ARDUINO/Resources/arduino_buttons_circuit_basics.pdf)\
-[Digital input/output](ARDUINO/Resources/arduino_creating_states.pdf)\
-[Analog input/output](ARDUINO/Resources/arduino_analog_read.pdf)
+[Intro to Arduino](./Resources/intro_arduino.pdf)\
+[Setting up and getting started](./Resources/arduino_setting_up.pdf)\
+[Circuit and button basics](./Resources/arduino_buttons_circuit_basics.pdf)\
+[Digital input/output](./Resources/arduino_creating_states.pdf)\
+[Analog input/output](./Resources/arduino_analog_read.pdf)
 \
 \
 **Push a button and turn an LED off/on**\
-*[Code](ARDUINO/Code/arduino_analog_input_output)\
+*[Code](/arduino_analog_input_output)\
 Components in the circuit:\
 LED\
 Resistor(s)\
@@ -25,7 +25,7 @@ Momentary Switch (Button)*\
 \
 \
 **Turn a dial to dim a light**\
-*[Code](ARDUINO/Code/arduino_digital_input_output)\
+*[Code](/arduino_digital_input_output)\
 Components in the circuit:\
 LED\
 Resistor(s)/Capacitor(s)\
@@ -33,7 +33,7 @@ Potentiometer (Dial)*\
 \
 \
 **Turn a dial to adjust a servo arm**\
-*[Code](ARDUINO/Code/arduino_dial_servo)\
+*[Code](/arduino_dial_servo)\
 Components in the circuit:\
 Servo Motor\
 Capacitor(s)\
@@ -41,7 +41,7 @@ Potentiometer (Dial)*\
 \
 \
 **Turn a dial to adjust speed of a motor**\
-*[Code](ARDUINO/Code/arduino_dial_motor_speed)\
+*[Code](/arduino_dial_motor_speed)\
 Components in the circuit:\
 Stepper Motor\
 Capacitor(s)\
@@ -49,7 +49,7 @@ Potentiometer (Dial)*\
 \
 \
 **Changing visual output with a button press**
-*[arduino_code](ARDUINO/Code/arduino_usb_processing)
+*[arduino_code](/arduino_usb_processing)
 processing_code
 \
 This next section will be about connecting the Arduino computer and sensors to a visual element in an open source software program called Processing.
