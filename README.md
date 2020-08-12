@@ -1,4 +1,4 @@
-# FACULTY RESEARCH SPACE MAIN GITHUB PAGE
+# FITNYC FACULTY RESEARCH SPACE MAIN GITHUB PAGE
 
 FIT's Faculty Research Space is an interdisciplinary lab space intended to foster work across schools, and support a commitment to technology, innovation, and exploration, along with research and development. Faculty can explore on their own, collaborate, and/or bring students into the lab for demonstrations. 
 
