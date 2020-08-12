@@ -49,10 +49,10 @@ Potentiometer (Dial)*\
 \
 \
 **Changing visual output with a button press**\
-*[arduino_code](./arduino_usb_processing)
-processing_code
+*[arduino_code](./arduino_usb_processing)\
+processing_code\
 \
-This next section will be about connecting the Arduino computer and sensors to a visual element in an open source software program called Processing.
+This next section will be about connecting the Arduino computer and sensors to a visual element in an open source software program called Processing.\
 \
 Processing.org - <a href="http://processing.org" target="_blank">[main web page for reference and downloading open source software]</a>
 \
