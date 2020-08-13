@@ -2,7 +2,7 @@
 
 
 In order these steps must be taken for this to work:
-1. Follow the directions to hookup a button and upload the [arduino_usb_processing](ARDUINO/Code/arduino_usb_processing) code.
+1. Follow the directions to hookup a button and upload the [arduino_usb_processing](/arduino_usb_processing) code.
 2. You **MUST** have your Arduino connected up to your computer through a USB cable for this to work!
 3. Copy and paste the code below into an empty Processing sketch.
 4. Run the Processing sketch.
