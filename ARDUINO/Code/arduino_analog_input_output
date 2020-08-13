@@ -3,7 +3,6 @@ Use a potentiometer to control the brightness of an LED.
 
 Insert code below this to create a sketch:
 
-/*
   Analog Input
 
   Demonstrates analog input by reading an analog sensor on analog pin 0 and
@@ -24,8 +23,8 @@ Insert code below this to create a sketch:
     board, the LED is optional.
 
   http://www.arduino.cc/en/Tutorial/AnalogInput
-*/
 
+```
 int sensorPin = A0;    // select the input pin for the potentiometer
 int ledPin = 13;      // select the pin for the LED
 int sensorValue = 0;  // variable to store the value coming from the sensor
@@ -48,5 +47,5 @@ void loop() {
 
 delay(100); // delay a tenth to allow the change to take place  
 }
-
+```
 
