@@ -7,8 +7,7 @@ OR
 
 Insert code below this to create a sketch:\
 
-'
-/*Debounce
+Debounce
 
   Each time the input pin goes from LOW to HIGH (e.g. because of a push-button
   press), the output pin is toggled from LOW to HIGH or HIGH to LOW. There's a
@@ -23,8 +22,8 @@ Insert code below this to create a sketch:\
     to pin 13, so you don't need any extra components for this example.
 
   http://www.arduino.cc/en/Tutorial/Debounce
-*/
 
+'''
 // constants won't change. They're used here to set pin numbers:
 const int buttonPin = 2;    // the number of the pushbutton pin
 const int ledPin = 13;      // the number of the LED pin or change to pin of choice
@@ -82,5 +81,5 @@ void loop() {
   // save the reading. Next time through the loop, it'll be the lastButtonState:
   lastButtonState = reading;
 }
-'
+'''
 
