@@ -6,4 +6,7 @@ The FRS is staffed by a full-time IT technician with experience in academic and 
 
 Documentation of the processes and resource materials will be maintained to create a knowledge repository located here on this github.
 
-Check out the wiki for more info: [FRS_wiki](https://github.com/FITNYC-FRS/MAIN/wiki)
+**EMERGING TECHNOLOGIES**
+[ARDUINO](/ARDUINO)
+[AR](/AR)
+[VR](/VR)
