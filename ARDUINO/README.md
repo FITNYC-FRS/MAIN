@@ -17,7 +17,7 @@ Introduction tutorials:\
 \
 \
 **Push a button and turn an LED off/on**\
-*[Code](Code/arduino_analog_input_output)\
+*[Code](Code/arduino_analog_input_output.md)\
 Components in the circuit:\
 LED\
 Resistor(s)\
@@ -25,7 +25,7 @@ Momentary Switch (Button)*\
 \
 \
 **Turn a dial to dim a light**\
-*[Code](Code/arduino_digital_input_output)\
+*[Code](Code/arduino_digital_input_output.md)\
 Components in the circuit:\
 LED\
 Resistor(s)/Capacitor(s)\
@@ -33,7 +33,7 @@ Potentiometer (Dial)*\
 \
 \
 **Turn a dial to adjust a servo arm**\
-*[Code](Code/arduino_dial_servo)\
+*[Code](Code/arduino_dial_servo.md)\
 Components in the circuit:\
 Servo Motor\
 Capacitor(s)\
@@ -41,7 +41,7 @@ Potentiometer (Dial)*\
 \
 \
 **Turn a dial to adjust speed of a motor**\
-*[Code](Code/arduino_dial_motor_speed)\
+*[Code](Code/arduino_dial_motor_speed.md)\
 Components in the circuit:\
 Stepper Motor\
 Capacitor(s)\
@@ -49,7 +49,7 @@ Potentiometer (Dial)*\
 \
 \
 **Changing visual output with a button press**\
-*[arduino_code](Code/arduino_usb_processing)\
+*[arduino_code](Code/arduino_usb_processing.md)\
 processing_code\
 \
 This next section will be about connecting the Arduino computer and sensors to a visual element in an open source software program called Processing.\
