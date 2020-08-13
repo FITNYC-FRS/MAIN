@@ -1,4 +1,5 @@
-ANALOG INPUT/OUTPUT
+**ANALOG INPUT/OUTPUT**\
+\
 Use a potentiometer to control the brightness of an LED. 
 
 Insert code below this to create a sketch:
