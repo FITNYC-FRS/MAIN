@@ -1,5 +1,7 @@
-DIGITAL INPUT/OUTPUT
-Read a pushbutton, filtering noise, and turning a light on and off. You can reference the image at the bottom of this page for hookup and use of the onboard LED.
+**DIGITAL INPUT/OUTPUT**\
+\
+Read a pushbutton, filtering noise, and turning a light on and off.\
+You can reference the image at the bottom of this page for hookup and use of the onboard LED.
 
 This code is the same as the example provided by Arduino called DEBOUNCE so you can open that example in the Arduino IDE 
 
