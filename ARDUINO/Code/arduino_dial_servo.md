@@ -1,4 +1,5 @@
-ADJUST A SERVO MOTOR WITH A DIAL
+**ADJUST A SERVO MOTOR WITH A DIAL**
+
 Turn a dial and adjust the position of a servo motor.
 
 This code is the same as the example provided by Arduino Servo library called Knob so you can open that example in the Arduino IDE 
@@ -7,15 +8,15 @@ OR
 
 Insert the below code to create the sketch:
 
-/*
+
  Controlling a servo position using a potentiometer (variable resistor)
  by Michal Rinott <http://people.interaction-ivrea.it/m.rinott>
 
  modified on 8 Nov 2013
  by Scott Fitzgerald
  http://www.arduino.cc/en/Tutorial/Knob
-*/
 
+```
 #include <Servo.h>
 
 Servo myservo;  // create servo object to control a servo
@@ -33,5 +34,4 @@ void loop() {
   myservo.write(val);                  // sets the servo position according to the scaled value
   delay(15);                           // waits for the servo to get there
 }
-
-
+```
