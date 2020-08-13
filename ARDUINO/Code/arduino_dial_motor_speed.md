@@ -1,4 +1,5 @@
-ADJUST A DIAL TO CONTROL SPEED OF MOTOR
+**ADJUST A DIAL TO CONTROL SPEED OF MOTOR**\
+
 Turn a dial to adjust the speed of a stepper motor. 
 
 This code is the same as the example provided by Arduino Stepper library called stepper_speedControl so you can open that example in the Arduino IDE 
@@ -8,7 +9,7 @@ OR
 Insert code below this to create a sketch:
 
 
-/*
+
  Stepper Motor Control - speed control
 
  This program drives a unipolar or bipolar stepper motor.
@@ -24,8 +25,7 @@ Insert code below this to create a sketch:
  Modified 28 Oct 2010
  by Tom Igoe
 
- */
-
+```
 #include <Stepper.h>
 
 const int stepsPerRevolution = 200;  // change this to fit the number of steps per revolution
@@ -53,6 +53,6 @@ void loop() {
     myStepper.step(stepsPerRevolution / 100);
   }
 }
-
+```
 
 
