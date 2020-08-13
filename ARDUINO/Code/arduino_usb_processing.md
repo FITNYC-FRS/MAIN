@@ -5,7 +5,7 @@ The code below would be uploaded to the microcontroller and left to run while re
 Paste the code below into the a blank Arduino sketch:
 
 
-```/*
+/*
   Debounce
 
   Each time the input pin goes from LOW to HIGH (e.g. because of a push-button
@@ -34,6 +34,7 @@ Paste the code below into the a blank Arduino sketch:
   http://www.arduino.cc/en/Tutorial/Debounce
 */
 
+```
 // constants won't change. They're used here to set pin numbers:
 const int buttonPin = 2;    // the number of the pushbutton pin
 const int ledPin = 13;      // the number of the LED pin
