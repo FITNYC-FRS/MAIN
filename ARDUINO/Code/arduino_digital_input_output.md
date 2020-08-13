@@ -7,7 +7,7 @@ OR
 
 Insert code below this to create a sketch:\
 
-'''
+'
 /*Debounce
 
   Each time the input pin goes from LOW to HIGH (e.g. because of a push-button
@@ -82,5 +82,5 @@ void loop() {
   // save the reading. Next time through the loop, it'll be the lastButtonState:
   lastButtonState = reading;
 }
-'''
+'
 
