@@ -7,7 +7,7 @@ This code is the same as the example provided by Arduino called DEBOUNCE so you 
 
 OR
 
-Insert code below this to create a sketch:\
+Insert code below this to create a sketch:
 
 Debounce
 
