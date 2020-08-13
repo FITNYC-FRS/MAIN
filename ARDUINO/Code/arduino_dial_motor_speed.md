@@ -1,4 +1,4 @@
-**ADJUST A DIAL TO CONTROL SPEED OF MOTOR**\
+**ADJUST A DIAL TO CONTROL SPEED OF MOTOR**
 
 Turn a dial to adjust the speed of a stepper motor. 
 
