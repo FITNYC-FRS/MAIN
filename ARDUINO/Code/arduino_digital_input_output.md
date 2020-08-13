@@ -5,10 +5,10 @@ This code is the same as the example provided by Arduino called DEBOUNCE so you 
 
 OR
 
-Insert code below this to create a sketch:
+Insert code below this to create a sketch:\
+
 '''
-/*
-  Debounce
+/*Debounce
 
   Each time the input pin goes from LOW to HIGH (e.g. because of a push-button
   press), the output pin is toggled from LOW to HIGH or HIGH to LOW. There's a
