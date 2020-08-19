@@ -49,10 +49,8 @@ Potentiometer (Dial)*\
 \
 \
 **Changing visual output with a button press**\
-*[arduino_code](Code/arduino_usb_processing.md)\
-[processing_code](Code/processing_serial_input.md)\
-\
-This next section will be about connecting the Arduino computer and sensors to a visual element in an open source software program called Processing.\
+
+*This next section will be about connecting the Arduino computer and sensors to a visual element in an open source software program called Processing.\
 \
 Processing.org - [main web page for reference and downloading open source software](http://processing.org)/
 \
@@ -61,4 +59,8 @@ In order to connect Arduino interactivity with Processing visual output, we need
 \
 \
 So, for clarity, the same button schematic, or hookup, provided for the button_LED example above will work for this but the code will be different so, instead of turning on an LED, the sketch will send data over the USB to be received by the Processing sketch and change the color of the display. For example, a button is pressed that is hooked up to a microcontroller and the display changes from red to green. This is a super stripped down example but the code provided can be changed to either add more buttons or add more interactivity in the display like keeping count of how many times the button is pressed and displaying that number on the display or virtually anything visual.*
+\
+[arduino_code](Code/arduino_usb_processing.md)\
+[processing_code](Code/processing_serial_input.md)
+\
 \
