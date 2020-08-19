@@ -50,7 +50,7 @@ Potentiometer (Dial)*\
 \
 **Changing visual output with a button press**\
 *[arduino_code](Code/arduino_usb_processing.md)\
-processing_code\
+[processing_code](Code/processing_serial_input.md)\
 \
 This next section will be about connecting the Arduino computer and sensors to a visual element in an open source software program called Processing.\
 \
