@@ -50,7 +50,7 @@ Potentiometer (Dial)*\
 \
 **Changing visual output with a button press**\
 
-*This next section will be about connecting the Arduino computer and sensors to a visual element in an open source software program called Processing.\
+*This next section will be about connecting the Arduino computer and sensors to a visual element in an open source software program called Processing.
 \
 Processing.org - [main web page for reference and downloading open source software](http://processing.org)/
 \
