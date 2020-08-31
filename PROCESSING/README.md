@@ -25,7 +25,7 @@ Processing\
 [Typography](https://processing.org/tutorials/typography/)\
 [Strings and Drawing Text](https://processing.org/tutorials/text/)\
 [Images and Pixels](https://processing.org/tutorials/pixels/)\
-[2D Transformations](https://processing.org/tutorials/transform2d/)\
+[2D Transformations](https://processing.org/tutorials/transform2d/)*
 
 *[Hello Processing](https://hello.processing.org/)(about an hour long video series)*
 
