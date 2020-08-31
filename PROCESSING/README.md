@@ -56,11 +56,11 @@ P5\
 **Examples:**
 
 Processing\
-*[Main Examples Page](https://processing.org/examples/)
+*[Main Examples Page](https://processing.org/examples/)\
 I will put more specific examples that will help dynamic design concepts here*
 
 P5\
-*[Main Examples page](https://p5js.org/examples/)
+*[Main Examples page](https://p5js.org/examples/)\
 I will put more specific examples that will help dynamic design concepts here*
 
 
