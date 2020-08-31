@@ -2,7 +2,15 @@
 
 Here you will find resources and code for learning how to incorporate Processing technologies into your next project.
 
-If you are completely new to code based art, Processing is a flexible software sketchbook and a language for learning how to code within the context of the visual arts and P5 is an interpretation of Processing for the web. There is a robust community that is supported by good documentation as well as helpful tutorials and examples to learn from. This github repository is meant to be an introduction and not necessarily a comprehensive survey of the Processing Community.
+If you are completely new to code based art, let's just get some words and phrases defined that might seem confusing, like "processing" and "documentation".
+
+***Processing** is a flexible software sketchbook and a language for learning how to code within the context of the visual arts.\
+**P5** is an interpretation of Processing for the web.\
+**Documentation** or *reference* is the place where you will find definitions of functions usually including some sample code.*
+
+Processing and P5 have a robust community that is supported by good documentation as well as helpful tutorials and examples to learn from. 
+
+This github repository is meant to be an introduction and not necessarily a comprehensive survey of the Processing Community.
 
 
 **Basics:**\
@@ -36,8 +44,6 @@ P5\
 
 
 **Documentation/Reference:**
-
-Documentation or reference is the place where you will find definitions of functions usually including some sample code.
 
 *[Processing Reference](https://processing.org/reference/)\
 [P5 Reference](https://p5js.org/reference/)*
