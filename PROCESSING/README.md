@@ -6,7 +6,7 @@ If you are completely new to code based art, let's just get some words and phras
 
 ***Processing** is a flexible software sketchbook and a language for learning how to code within the context of the visual arts.\
 **P5** is an interpretation of Processing for the web.\
-**Documentation** or *reference* is the place where you will find definitions of functions usually including some sample code.*
+**Documentation** or reference is the place where you will find definitions of functions(i.e. explanation of code terms) usually including some sample code.*
 
 Processing and P5 have a robust community that is supported by good documentation as well as helpful tutorials and examples to learn from. 
 
@@ -33,14 +33,29 @@ Processing\
 [Typography](https://processing.org/tutorials/typography/)\
 [Strings and Drawing Text](https://processing.org/tutorials/text/)\
 [Images and Pixels](https://processing.org/tutorials/pixels/)\
-[2D Transformations](https://processing.org/tutorials/transform2d/)*
+[2D Transformations](https://processing.org/tutorials/transform2d/)\
+[3D or P3D](https://processing.org/tutorials/p3d/)*
 
 *[Hello Processing](https://hello.processing.org/)(about an hour long video series)*
 
 
 P5\
 *[Getting started with P5](https://p5js.org/get-started/)\
-[Examples page](https://p5js.org/examples/)*
+[Coordinate System](https://p5js.org/learn/coordinate-system-and-shapes.html)\
+[Color](https://p5js.org/learn/color.html)\
+[Interactivity](https://p5js.org/learn/interactivity.html)\
+[Program Flow](https://p5js.org/learn/program-flow.html)\
+[Curves](https://p5js.org/learn/curves.html)\
+[Beyond the Canvas](https://github.com/processing/p5.js/wiki/Beyond-the-canvas)\
+[WebGL - or getting started in 3D](https://github.com/processing/p5.js/wiki/Getting-started-with-WebGL-in-p5)*
+
+**Examples:**
+
+Processing\
+*[Main Examples Page](https://processing.org/examples/)*
+
+P5\
+*[Main Examples page](https://p5js.org/examples/)*
 
 
 **Documentation/Reference:**
