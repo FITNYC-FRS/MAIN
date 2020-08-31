@@ -4,9 +4,13 @@ Here you will find resources and code for learning how to incorporate Processing
 
 If you are completely new to code based art, let's just get some words and phrases defined that might seem confusing, like "processing" and "documentation".
 
-***Processing** is a flexible software sketchbook and a language for learning how to code within the context of the visual arts.\
-**P5** is an interpretation of Processing for the web.\
-**Documentation** or reference is the place where you will find definitions of functions(i.e. explanation of code terms) usually including some sample code.*
+**Processing** is a flexible software sketchbook and a language for learning how to code within the context of the visual arts.
+
+**P5** is an interpretation of Processing for the web.
+
+**Documentation** or reference is the place where you will find definitions of functions(i.e. explanation of code terms) usually including some sample code.
+
+A **sketch** is a project in Processing or P5 and it is a reference to a sketchbook in the way artists develop ideas with a pencil and paper.
 
 Processing and P5 have a robust community that is supported by good documentation as well as helpful tutorials and examples to learn from. 
 
@@ -52,10 +56,12 @@ P5\
 **Examples:**
 
 Processing\
-*[Main Examples Page](https://processing.org/examples/)*
+*[Main Examples Page](https://processing.org/examples/)
+I will put more specific examples that will help dynamic design concepts here*
 
 P5\
-*[Main Examples page](https://p5js.org/examples/)*
+*[Main Examples page](https://p5js.org/examples/)
+I will put more specific examples that will help dynamic design concepts here*
 
 
 **Documentation/Reference:**
