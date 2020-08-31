@@ -1,7 +1,8 @@
 # MAIN PROCESSING/P5 PAGE
 
-"Processing is a flexible software sketchbook and a language for learning how to code within the context of the visual arts."
-- Processing Main [Website](https://processing.org) Description
+Here you will find resources and code for learning how to incorporate Processing technologies into your next project.
+ 
+[Processing Main Website](https://processing.org) 
 
 Basics:\
 To get started working with Processing you will need to either download the software or work online with the P5 platform:
