@@ -17,11 +17,12 @@ There are a few methods or tools to create AR content using Zappar's workflow ca
 
 For super simple content, like business cards or posters or any 2D art integration into an augmented experience, you can use:\
 [Zapworks Designer](https://docs.zap.works/designer/getting-started/)\
-[Designer Tutorial Page](https://docs.zap.works/designer/tutorials/)
+[Tutorial Page](https://docs.zap.works/designer/tutorials/)\
 
 In order to develop content with 3D perspectives, you will need to use:\
 [Zapworks Studio](https://docs.zap.works/studio/getting-started/)\
-[Studio Tutorial Page](https://docs.zap.works/studio/tutorials/)
+[Tutorial Page](https://docs.zap.works/studio/tutorials/)\
+[Project Templates](https://docs.zap.works/studio/project-templates/)
 
 The other tools are more geared toward developers with a more complex strategy that involves other developer apps that generally require some combination of Javascript, html, and game development.
 
