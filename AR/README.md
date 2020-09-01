@@ -15,9 +15,11 @@ This level of membership is free and you can have up to five augmented reality p
 
 There are a few methods or tools to create AR content using Zappar's workflow called Zapworks. 
 
-For super simple content, like business cards or posters or any 2D art integration into an augmented experience, you can use [Zapworks Designer](https://docs.zap.works/designer/getting-started/)\
+For super simple content, like business cards or posters or any 2D art integration into an augmented experience, you can use:\
+[Zapworks Designer](https://docs.zap.works/designer/getting-started/)
 
-In order to develop content with 3D perspectives, you will need to use the [Zapworks Studio](https://docs.zap.works/studio/getting-started/)\
+In order to develop content with 3D perspectives, you will need to use:\
+[Zapworks Studio](https://docs.zap.works/studio/getting-started/)
 
 The other tools are more geared toward developers with a more complex strategy that involves other developer apps that generally require some combination of Javascript, html, and game development.
 
