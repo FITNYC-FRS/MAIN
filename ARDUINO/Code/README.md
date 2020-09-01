@@ -1,3 +1,3 @@
-# ARDUINO CODE SAMPLES
+# ARDUINO CODE EXAMPLES
 
 This folder contains code from example projects.
