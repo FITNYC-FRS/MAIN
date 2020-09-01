@@ -1,3 +1,3 @@
-# PROCESSING MAIN CODE FOLDER
+# PROCESSING CODE EXAMPLES
 
-This folder contains code examples for Processing.
+This folder contains code from example projects.
