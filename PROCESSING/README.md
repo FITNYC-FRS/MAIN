@@ -81,4 +81,5 @@ P5\
 
 *[Processing Reference](https://processing.org/reference/)\
 [P5 Reference](https://p5js.org/reference/)\
-[Open Processing](https://openprocessing.org)*
+[Open Processing](https://openprocessing.org)\
+[Medium.com article about teaching with Open Processing](https://medium.com/openprocessing/teaching-coding-with-openprocessing-3b3b775c6ad2)*
