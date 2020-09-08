@@ -8,7 +8,7 @@ This is where we will put articles and pdfs about learning processing/p5 but for
 [Learn on Open Processing](https://www.openprocessing.org/learn/)\
 [P5Studio](https://p5studio.timrodenbroeker.now.sh/)
 
-Some Open Processing Example Sketches:\
+**Some Open Processing Example Sketches:**\
 [Sleeepy](https://www.openprocessing.org/sketch/917861) - typography with shaders\
 [Kinect Type Change](https://www.openprocessing.org/sketch/907618) - typography with sliders\
 [Extruded Text](https://www.openprocessing.org/sketch/914290) - typography with extrusion and color gradient\
