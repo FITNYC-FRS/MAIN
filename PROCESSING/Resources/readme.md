@@ -15,7 +15,7 @@ This is where we will put articles and pdfs about learning processing/p5 but for
 [Medium.com article about teaching with Open Processing](https://medium.com/openprocessing/teaching-coding-with-openprocessing-3b3b775c6ad2)*
 
 
-**Some Open Processing Example Sketches:**\
+**Some Open Processing Example Sketches:**
 
 *[Sleeepy](https://www.openprocessing.org/sketch/917861) - typography with shaders\
 [Kinect Type Change](https://www.openprocessing.org/sketch/907618) - typography with sliders\
