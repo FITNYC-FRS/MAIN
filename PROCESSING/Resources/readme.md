@@ -7,7 +7,8 @@ This is where we will put articles and pdfs about learning processing/p5 but for
 [Open Processing](https://openprocessing.org)\
 [Learn on Open Processing](https://www.openprocessing.org/learn/)\
 [P5Studio](https://p5studio.timrodenbroeker.now.sh/)\
-[Creative Coding Essentials](https://timrodenbroeker.de/courses/creative-coding-essentials/)*
+[Creative Coding Essentials](https://timrodenbroeker.de/courses/creative-coding-essentials/) - by tim rodenbroeker
+[Coding Train](https://www.youtube.com/playlist?list=PLRqwX-V7Uu6Zy51Q-x9tMWIv9cueOFTFA)*
 
 **Documentation/Reference:**
 
