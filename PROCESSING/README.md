@@ -31,12 +31,12 @@ P5 Web Editor - [browser based editor](https://editor.p5js.org/)
 Processing\
 *[Getting started with Processing](https://processing.org/tutorials/gettingstarted/)\
 [Anatomy of a Program](https://processing.org/tutorials/anatomy/)\
-[Overview](https://processing.org/tutorials/overview/)\*
+[Overview](https://processing.org/tutorials/overview/)*\
 
 *[Hello Processing](https://hello.processing.org/)(about an hour long video series)*
 
 
 P5\
-*[Getting started with P5](https://p5js.org/get-started/)\*
+*[Getting started with P5](https://p5js.org/get-started/)*\
 
 After you get setup and are ready to explore more check out our [Resources](Resources) folder for tutorials and examples.
