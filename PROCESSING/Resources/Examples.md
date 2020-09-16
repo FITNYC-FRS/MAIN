@@ -1,6 +1,6 @@
 # EXAMPLES FOR PROCESSING/P5
 
-These are examples of some basic concepts with code and some explanation. If you are looking for tutorials, please check out our [tutorials](/Tutorials.md) page.
+These are examples of some basic concepts with code and some explanation. If you are looking for tutorials, please check out our [tutorials](Tutorials.md) page.
 
 **Processing**\
 *[Main Examples Page](https://processing.org/examples/)\
