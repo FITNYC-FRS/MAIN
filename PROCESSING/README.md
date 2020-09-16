@@ -4,7 +4,15 @@ Here you will find resources and code for learning how to incorporate Processing
 
 If you are completely new to code based art, let's just get some words and phrases defined that might seem confusing, like "processing" and "documentation".
 
-**Processing** is a flexible software sketchbook and a language for learning how to code within the context of the visual arts.
+**Processing** consists of:
+
+The Processing Development Environment (PDE). This is the software that runs when you double-click the Processing icon. The PDE is an Integrated Development Environment (IDE) with a minimalist set of features designed as a simple introduction to programming or for testing one-off ideas.
+
+A collection of functions (also referred to as commands or methods) that make up the “core” programming interface, or API, as well as several libraries that support more advanced features such as sending data over a network, reading live images from a webcam, and saving complex imagery in PDF format.
+
+A language syntax, identical to Java but with a few modifications.
+
+An active online community, based at http://processing.org.
 
 **P5** is an interpretation of Processing for the web.
 
