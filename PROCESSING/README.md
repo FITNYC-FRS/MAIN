@@ -39,4 +39,4 @@ Processing\
 P5\
 *[Getting started with P5](https://p5js.org/get-started/)\*
 
-After you get setup and are ready to explore more check out our [Resources](resources) folder for tutorials and examples.
+After you get setup and are ready to explore more check out our [Resources](Resources) folder for tutorials and examples.
