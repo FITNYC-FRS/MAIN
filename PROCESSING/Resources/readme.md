@@ -1,7 +1,7 @@
 # Resources for Processing/P5
 
 These are the main resources for learning Processing and P5. On this page are the most general links to the Processing/P5 communities.
-For more specific instruction please see our [tutorials](Tutorials) page or our [examples](Examples) page.
+For more specific instruction please see our [tutorials](Tutorials.md) page or our [examples](Examples.md) page.
 
 
 **Main Community Pages**\
