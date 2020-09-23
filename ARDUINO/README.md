@@ -14,8 +14,10 @@ Introduction tutorials:\
 [Circuit and button basics](./Resources/arduino_buttons_circuit_basics.pdf)\
 [Digital input/output](./Resources/arduino_creating_states.pdf)\
 [Analog input/output](./Resources/arduino_analog_read.pdf)
-\
-\
+
+After you have a looked at the introduction tutorials, feel free to work with the examples provided below.\
+For a more indepth look at our [Resources](./Resources) page.
+
 **Push a button and turn an LED off/on**\
 *[Code](Code/arduino_analog_input_output.md)\
 Components in the circuit:\
@@ -64,4 +66,3 @@ So, for clarity, the same button schematic, or hookup, provided for the button_L
 
 [arduino_code](Code/arduino_usb_processing.md)\
 [processing_code](Code/processing_serial_input.md)
-
