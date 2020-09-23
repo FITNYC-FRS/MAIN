@@ -19,7 +19,7 @@ After you have a looked at the introduction tutorials, feel free to work with th
 For a more indepth look at our [Resources](./Resources) page.
 
 **Push a button and turn an LED off/on**\
-*[Code](Code/arduino_analog_input_output.md)\
+*[Code](Code/arduino_digital_input_output.md)\
 Components in the circuit:\
 LED\
 Resistor(s)\
@@ -27,7 +27,7 @@ Momentary Switch (Button)*\
 \
 \
 **Turn a dial to dim a light**\
-*[Code](Code/arduino_digital_input_output.md)\
+*[Code](Code/arduino_analog_input_output.md)\
 Components in the circuit:\
 LED\
 Resistor(s)/Capacitor(s)\
