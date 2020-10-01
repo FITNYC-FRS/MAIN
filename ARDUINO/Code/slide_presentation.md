@@ -1,4 +1,4 @@
-#SLIDE PRESENTATION IN PROCESSING USING A BUTTON AND ARDUINO
+# SLIDE PRESENTATION IN PROCESSING USING A BUTTON AND ARDUINO
 
 This example is for using Arduino button presses to advance a slide show presentation in Processing.
 
@@ -14,7 +14,7 @@ the number of slides provided by "number_slides" variable.
 Copy and paste this code below into your Arduino editor to upload to the Arduino board. If you need help understanding how to 
 do that, check out [Setting Up](./Resources/arduino_setting_up.pdf) or the main introduction page [here](./)
 
-#BELOW IS THE CODE FOR THE ARDUINO
+# BELOW IS THE CODE FOR THE ARDUINO
 
 ```
 const int number_slides = 4; // THIS IS THE NUMBER YOU WILL CHANGE TO MATCH THE NUMBER OF SLIDES. Just change the number!
@@ -104,7 +104,7 @@ just making sure that your extensions are correct whether they are .jpg or .png.
 Once you have your files named, you will simply drag and drop them into your sketch. This action will create a folder named "Data" and
 it is where the files will be stored. Copy and paste the code below into a blank sketch to get it to work.
 
-#BELOW IS THE CODE FOR PROCESSING
+# BELOW IS THE CODE FOR PROCESSING
 
 ```
 import processing.serial.*;
