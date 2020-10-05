@@ -4,21 +4,12 @@ This example is for using Arduino button presses to advance a slide show present
 
 Check out the example for hooking up a button to Arduino - [Button Example](http://www.arduino.cc/en/Tutorial/Debounce)
 
-Once you have the button hooked up and working, look at the code below and notice where you can change the number of slides
-to match the number of slides in your presentation. At the very top of the code area is a variable called "number_slides" and
-this is the number you would change to match the number of slides in your presentation. So, right now, it is equal to 4, meaning it will cycle
-through four outputs starting with 0(programming concepts involve starting from 0 when establishing an order) and sequentially
-increasing up to 3. So, each time the button is pressed, the counter(buttonPressCount) increases by 1 and resets when it passes
-the number of slides provided by "number_slides" variable.
-
 Copy and paste this code below into your Arduino editor to upload to the Arduino board. If you need help understanding how to 
 do that, check out [Setting Up](./Resources/arduino_setting_up.pdf) or the main introduction page [here](./)
 
 # BELOW IS THE CODE FOR THE ARDUINO
 
 ```
-const int number_slides = 4; // THIS IS THE NUMBER YOU WILL CHANGE TO MATCH THE NUMBER OF SLIDES. Just change the number!
-
 // constants won't change. They're used here to set pin numbers:
 const int buttonPin = 2;    // the number of the pushbutton pin
 const int ledPin = 13;      // the number of the LED pin
@@ -68,22 +59,19 @@ void loop() {
       // only toggle the LED if the new button state is HIGH
       if (buttonState == HIGH) {
         ledState = !ledState;
-        buttonPressCount++;         // every time the button is pressed the button count increases by 1
       }
     }
   }
 
-if(buttonPressCount>number_slides){ // this is comparing the number of button presses to the number of slides to make a loop
-    buttonPressCount = 0;           // so when the button has been pressed more than the number of slides, it resets to 0
-  }
   // set the LED:
   digitalWrite(ledPin, ledState);   // this just turns the onboard LED on/off each time the button is pressed(just visual feedback for you)
-  Serial.println(buttonPressCount); // this is where the arduino sends the information through the USB to the computer
+  Serial.println(ledState);         // this is where the arduino sends the information through the USB to the computer
 
   // save the reading. Next time through the loop, it'll be the lastButtonState:
   lastButtonState = reading;
   
 }
+
 ```
 
 After you have successfully modified the code to fit your slide count and uploaded the code to your Arduino, open the Processing software
@@ -94,11 +82,14 @@ in the Processing code below is set to 11 because that is here my computer regis
 you will see a list of serial ports printed out in the console log at the bottom of the screen below the code. That list will tell you what number
 should be in the "serial_port_arduino" variable assignment where mine says "serial_port_arduino=11".
 
-The other is to accommodate the number of slides and you just want it to match the arduino "number_slides" variable, so if "number_slides=4" on the Arduino
-then "number_slides" in the Processing sketch should be "number_slides=4".
+The other is to accommodate the number of slides. At the very top of the code area is a variable called "number_slides" and
+this is the number you would change to match the number of slides in your presentation. So, right now, it is equal to 4, meaning it will cycle
+through four outputs starting with 0(programming concepts involve starting from 0 when establishing an order) and sequentially
+increasing up to 3. So, each time the button is pressed, the counter(buttonPressCount) increases by 1 and resets when it passes
+the number of slides provided by "number_slides" variable.
 
 The trickiest part of all of this is making sure that your files are named correctly and placed in the sketch. You just want to make sure when you
-name your files that they match the name in the code. For example, below I have named the files "slide_0.jpg", slide_1.jpg", etc. and you should do the same
+name your files that they match the name in the code. For example, below I have named the files "slide_1.jpg", slide_2.jpg", etc. and you should do the same
 just making sure that your extensions are correct whether they are .jpg or .png.
 
 Once you have your files named, you will simply drag and drop them into your sketch. This action will create a folder named "Data" and
@@ -107,9 +98,10 @@ it is where the files will be stored. Copy and paste the code below into a blank
 # BELOW IS THE CODE FOR PROCESSING
 
 ```
+
 import processing.serial.*;
 
-// don't worry too much about this first stuff, just leave it and it should be fine
+// don't worry too mich about this first stuff, just leave it and it should be fine
 int lf = 10;    // Linefeed in ASCII
 String myString = null;
 Serial myPort;  // The serial port
@@ -123,6 +115,7 @@ int number_slides = 4; // change this number to match the number of slides
 
 // below is an array for the slides, which means it is like a container to store all slides for use later
 PImage [] slides = new PImage[number_slides];
+int slide_counter = 0;
 
 void setup() {
   size(900, 900);
@@ -143,11 +136,11 @@ void setup() {
 
   // this is where we are going to load the images for the slides
   // make sure that the files are named accordingly with the proper extensions, i.e. .jpg or .png
-  // for example, each file should be named "slide_0.jpg", "slide_1.jpg", "slide_2.jpg", etc.
+  // for example, each file should be named "slide_1.jpg", "slide_2.jpg", "slide_3.jpg", etc.
   // they can be .png or .jpg but just make sure they match the below for loop
-  for(int i = 0; i < slides.length; i++){       // this line loops through the number of slides and loads and loads the image below
-      slides[i] = loadImage("slide_"+i+".jpg"); // make sure the extension in the quotes matches your file(.jpg or .png)
-      slides[i].resize(width, height);          // change the size of the images to match the size of the sketch window
+  for(int i = 0; i < slides.length; i++){           // this line loops through the number of slides and loads and loads the image below
+      slides[i] = loadImage("slide_"+(i+1)+".jpg"); // make sure the extension in the quotes matches your file(.jpg or .png)
+      slides[i].resize(width, height);              // change the size of the images to match the size of the sketch window
   }
 }
 
@@ -158,7 +151,15 @@ void draw() {
     if (myString != null) {                // if the incoming data is not empty, let's see what that incoming data equals
       value = int(trim(myString));         // save the incoming data in a variable called value
       
-      image(slides[value], 0, 0);          // show the slide with the value of the incoming data
+      if(value!=prevValue){                // check the value of the incoming data 
+        slide_counter++;                   // and if the value has changed, increase the slide_counter by 1
+        if(slide_counter>=slides.length){  // if the slide_counter becomes larger than the number_slides
+          slide_counter = 0;               // set the slide_counter back to 0
+        }
+        prevValue = value;                 // then set the prevValue to value to prepare for the next button press
+      }
+      
+      image(slides[slide_counter], 0, 0);  // show the slide with the value of the incoming data
                                            // so, if the button has not been pressed the incoming data
                                            // will be 0 and the image shown will be slides[0]
                                            // which is the first address in the slides array
