@@ -6,7 +6,7 @@ Check out the example for hooking up a button to Arduino - [Button Example](http
 
 Once you have the button hooked up and working, look at the code below and notice where you can change the number of slides
 to match the number of slides in your presentation. At the very top of the code area is a variable called "number_slides" and
-this is the number youwould change to match the number of slides. So, right now, it is equal to 4, meaning it will cycle
+this is the number you would change to match the number of slides in your presentation. So, right now, it is equal to 4, meaning it will cycle
 through four outputs starting with 0(programming concepts involve starting from 0 when establishing an order) and sequentially
 increasing up to 3. So, each time the button is pressed, the counter(buttonPressCount) increases by 1 and resets when it passes
 the number of slides provided by "number_slides" variable.
