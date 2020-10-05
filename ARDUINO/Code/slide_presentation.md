@@ -132,7 +132,9 @@ PImage [] slides = new PImage[number_slides];
 int slide_counter = 0;
 
 void setup() {
-  size(900, 900);
+  // the size of the display window
+  size(900, 900); // change the numbers in the the parentheses to change the display size. first number is width, second is height
+  // you may also make the display full screen by replacing "size(900,900);" with "fullScreen();"
   
   // List all the available serial ports
   printArray(Serial.list()); // this will print in the console log below, you will see a list of available ports 
