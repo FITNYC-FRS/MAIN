@@ -78,9 +78,23 @@ After you have successfully uploaded the code to your Arduino, open the Processi
 to change our slides. In the code below, there are two things you would need to change.
 
 One is to make sure that the serial port you are trying to read matches the USBmodem port for the Arduino. The variable "serial_port_arduino"
-in the Processing code below is set to 11 because that is here my computer registers that USB port. When you runt he sketch for the first time, 
+in the Processing code below is set to 11 because that is here my computer registers that USB port. When you run the sketch for the first time, 
 you will see a list of serial ports printed out in the console log at the bottom of the screen below the code. That list will tell you what number
-should be in the "serial_port_arduino" variable assignment where mine says "serial_port_arduino=11".
+should be in the "serial_port_arduino" variable assignment where mine says "serial_port_arduino=11", your should match the number in brackets like mine
+where it says "/dev/tty.usbmodem14101". The list looks like this:
+
+\[0] "/dev/cu.Animal-SPPDev"\
+\[1] "/dev/cu.Bluetooth-Incoming-Port"\
+\[2] "/dev/cu.hmpdub-WirelessiAP"\
+\[3] "/dev/cu.hmpdub-WirelessiAP-1"\
+\[4] "/dev/cu.UEBOOM-LWACP"\
+\[5] "/dev/cu.usbmodem14101"\
+\[6] "/dev/tty.Animal-SPPDev"\
+\[7] "/dev/tty.Bluetooth-Incoming-Port"\
+\[8] "/dev/tty.hmpdub-WirelessiAP"\
+\[9] "/dev/tty.hmpdub-WirelessiAP-1"\
+\[10] "/dev/tty.UEBOOM-LWACP"\
+\[11] "/dev/tty.usbmodem14101" - the number in the brackets on your list should be put into the "serial_port_arduino" variable.
 
 The other is to accommodate the number of slides. At the very top of the code area is a variable called "number_slides" and
 this is the number you would change to match the number of slides in your presentation. So, right now, it is equal to 4, meaning it will cycle
