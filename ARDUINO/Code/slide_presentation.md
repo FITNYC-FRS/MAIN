@@ -122,10 +122,10 @@ Serial myPort;  // The serial port
 int value = 0;
 int prevValue = 0;
 
-int serial_port_arduino; // this variable is used to tell processing which serial port to look for the arduino. defined below
+int serial_port_arduino;  // this variable is used to tell processing which serial port to look for the arduino. defined below
 
 // THIS IS THE VARIABLE THAT YOU WOULD CHANGE !!!!!!!
-int number_slides = 4; // change this number to match the number of slides
+int number_slides = 4;    // change this number to match the number of slides
 
 // below is an array for the slides, which means it is like a container to store all slides for use later
 PImage [] slides = new PImage[number_slides];
@@ -133,15 +133,17 @@ int slide_counter = 0;
 
 void setup() {
   // the size of the display window
-  size(900, 900); // change the numbers in the the parentheses to change the display size. first number is width, second is height
-  // you may also make the display full screen by replacing "size(900,900);" with "fullScreen();"
+  size(900, 900);                       // change the numbers in the the parentheses to change the display size. first number is width, second is height
+                                        // you may also make the display full screen by replacing "size(900,900);" with "fullScreen();"
   
   // List all the available serial ports
-  printArray(Serial.list()); // this will print in the console log below, you will see a list of available ports 
-  // then check which port number is the USBmodem port and change the number below to match to connect to arduino
+  printArray(Serial.list());            // this will print in the console log below, you will see a list of available ports 
+                                        // then check which port number is the USBmodem port and change the number below to match to connect to arduino
+                                        
   // for me it was 11 so below i set the variable to 11
   serial_port_arduino = 11;
   
+  // DON'T WORRY ABOUT THIS PART SO MUCH AS LONG AS HAVE CHANGED THE "serial_port_arduino" number above to match your USB modem port
   // Open the port you are using at the rate you want:
   myPort = new Serial(this, Serial.list()[serial_port_arduino], 9600); // this is where processing decides which serial port to listen to
   myPort.clear();
