@@ -116,20 +116,24 @@ it is where the files will be stored. Copy and paste the code below into a blank
 import processing.serial.*;
 
 // don't worry too mich about this first stuff, just leave it and it should be fine
-int lf = 10;    // Linefeed in ASCII
+int lf = 10; 
 String myString = null;
-Serial myPort;  // The serial port
+Serial myPort;  
 int value = 0;
 int prevValue = 0;
 
-int serial_port_arduino;  // this variable is used to tell processing which serial port to look for the arduino. defined below
+int serial_port_arduino;                // this variable is used to tell processing which serial port to look for the arduino. defined below
 
 // THIS IS THE VARIABLE THAT YOU WOULD CHANGE !!!!!!!
-int number_slides = 4;    // change this number to match the number of slides
+int number_slides = 4;                  // change this number to match the number of slides
 
 // below is an array for the slides, which means it is like a container to store all slides for use later
 PImage [] slides = new PImage[number_slides];
 int slide_counter = 0;
+
+
+// the setup() function below is where we set things like display size, loaded images, port setting for USB connections, etc.
+// it only runs once and then proceeds to the draw() function
 
 void setup() {
   // the size of the display window
@@ -161,6 +165,10 @@ void setup() {
       slides[i].resize(width, height);              // change the size of the images to match the size of the sketch window
   }
 }
+
+
+// the draw() function below runs in a loop over and over 
+// so the information in there can change over time and allow for input from the button to make changes to the slide presentation
 
 void draw() {
   //background(255);
