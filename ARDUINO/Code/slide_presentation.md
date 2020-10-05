@@ -74,8 +74,8 @@ void loop() {
 
 ```
 
-After you have successfully modified the code to fit your slide count and uploaded the code to your Arduino, open the Processing software
-so we can look for the signal from the Arduino to change our slides. In the code below, there are two things you would need to change.
+After you have successfully uploaded the code to your Arduino, open the Processing software so we can look for the signal from the Arduino 
+to change our slides. In the code below, there are two things you would need to change.
 
 One is to make sure that the serial port you are trying to read matches the USBmodem port for the Arduino. The variable "serial_port_arduino"
 in the Processing code below is set to 11 because that is here my computer registers that USB port. When you runt he sketch for the first time, 
