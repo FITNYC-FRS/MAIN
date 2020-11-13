@@ -1,9 +1,0 @@
-00:06:52.917,00:06:55.917
-JEREMY WHITE: http://lovid.org/
-
-00:49:40.854,00:49:43.854
-JEREMY WHITE: jeremy_white@fitnyc.edu
-
-00:50:22.753,00:50:25.753
-JEREMY WHITE: https://github.com/FITNYC-FRS/MAIN
-
