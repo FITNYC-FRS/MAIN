@@ -6,7 +6,7 @@ In order for this to work, you will need to copy the ARDUINO CODE below and past
 
 Next check out the [diagram](wiring_diagram_servos_LED.png) to see how things should be connected. The "base" motor should be connected to PIN 9. The "elbow" motor should be connected to PIN 10. And the LED/magnet should be connected to PIN 13. Follow the wiring in the diagram and if you need further help just let me know.
 
-Once you have successfully loaded the code onto the Arduino, you will move to the Processing part. Copy and paste the PROCESSING CODE below into a blank Processing sketch, save it, and then run it byt pressing the 'play' button at the top of the editor. Once the sketch is running and the Arduino is connected properly(check the Serial port declaration part in the Processing code), you should see a small window open up where you can "draw" with the mouse when you press the mouse button on your trackpad. Two things should happen if everything is hooked up properly.
+Once you have successfully loaded the code onto the Arduino, you will move to the Processing part. Copy and paste the PROCESSING CODE below into a blank Processing sketch, save it, and then run it by pressing the 'play' button at the top of the editor. Once the sketch is running and the Arduino is connected properly(check the Serial port declaration part in the Processing code), you should see a small window open up where you can "draw" with the mouse when you press the mouse button on your trackpad. Two things should happen if everything is hooked up properly.
 
 1. The LED/magnet should turn on when the mouse is pressed
 2. The arms(servo motors) should move around to the approximate position relative to the size of the drawing window
