@@ -245,7 +245,7 @@ void draw() {
   // this part send the data out the USB to the Arduino
   myPort.write(to_arduino + "\n");
  
-  // this just prints out in the console at the bottom of the Processing sketch
+  // this just prints out the string that is sent to the Arduino in the console at the bottom of the Processing sketch
   println(to_arduino);
 
 }
