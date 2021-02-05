@@ -1,13 +1,37 @@
 # DRAWING ARM ARDUINO WITH PROCESSING SERIAL INPUT
 
+This project is about connecting an Arduino and receiving data from the mouse position to move two servo motors(arms) to "draw" what the mouse is drawing when it is pressed.
+
+In order for this to work, you will need to copy the ARDUINO CODE below and paste it into a blank Arduino project. Then you will upload the code onto the Arduino by connecting the Arduino with your computer by USB cable. When uploading to the Arduino, make sure the settings are in place for your specific board and that you are uploading through the proper port which is the USBmodem port on your computer.
+
+Once you have successfully loaded the code onto the Arduino, you will move to the Processing part. Copy and paste the PROCESSING CODE below into a blank Processing sketch, save it, and then run it byt pressing the 'play' button at the top of the editor. Once the sketch is running and the Arduino is connected properly(check the Serial port declaration part in the Processing code), you should see a small window open up where you can "draw" with the mouse when you press the mouse button on your trackpad. Two things should happen if everything is hooked up properly.
+
+1. The LED/magnet should turn on when the mouse is pressed
+2. The arms(servo motors) should move around to the approximate position relative to the size of the drawing window
+
+If either of these does not happen, check the diagram on how to hook it up and make sure the wires are snug enough to create the connections.
+
+If you are getting any errors when you run the code for Arduino or Processing, let me know and we can troubleshoot.
+
+Good luck and have fun!
+
 ARDUINO CODE
 
 ```
+// two slashes like this is what is called a comment
+// anything written after it is NOT read by the computer
+
+// these two lines include libraries for the servo and some math
 #include <Servo.h>
 #include <Math.h>
 
+// below we are declaring two Servo(s): myservo_1, myservo_2
+// this lets us use the Servo library commands on two servos
 Servo myservo_1, myservo_2;
 
+// these are the variables for the computation of the math
+// to get angles for the elbow and base angles
+// you do not need to do anything with them 
 float hyp,
       hyp_angle,
       outer_angle,
@@ -15,34 +39,48 @@ float hyp,
       base_angle,
       elbow_angle;
 
+// this variable called "command" is where we receive the two angles and magnet(true/false)
 String command;
 
+// this variable is used to turn the magent on and off
 boolean magnet = false;
+
+// this variable is used to set the arm angles when the sketch starts
 boolean set = false;
 
+// this setup part runs ONLY one time to establish which PINs we are using
 void setup() {
-  // put your setup code here, to run once:
+  // the two lines below are setting the motors attached to PIN 9 and 10
   myservo_1.attach(9);
   myservo_2.attach(10);
-  Serial.begin(115200);
-  //Serial.begin(9600);
   
-//  myservo_1.write(-90);
-//  myservo_2.write(90);
-  // LED for testing magnet boolean
+  // the line below starts a serial connection to receive info from Processing
+  Serial.begin(115200);
+  
+  // LED for testing magnet boolean(true/false)
+  // you will hook up the magnet to the same PIN #13 on the Arduino
   pinMode(13, OUTPUT);
+  // this line turns the LED/magnet off to begin
   digitalWrite(13, LOW);
 
 }
 
+
+// the loop below runs continuously to accept data from Processing and 
+// make things move around and turn on/off
 void loop() {
 
+  // this sets the motors to a start position
   if (!set) {
     myservo_1.writeMicroseconds(500);
     myservo_2.writeMicroseconds(1500);
     set = true;
   }
 
+
+  // here we are checking to see if there is a connection through the USB
+  // and if so, we are parsing the data into three parts (base_angle, elbow_angle, and magnet)
+  // this all happens down at the bottom in the part called parseCommand()
   if (Serial.available()) {
     
     char c = Serial.read();
@@ -55,38 +93,29 @@ void loop() {
     }
   }
 
+  // once we have parsed the incoming data from Processing
+  // we start by checking to see if the magnet is on(true) or off(false)
+  // this says, "if magnet is true, then..."
   if(magnet){
+      //turn on the LED/magnet
       digitalWrite(13, HIGH);
-     // Serial.println("on");
+     
     } else {
+      // if magnet is false, turn off the LED/magnet
       digitalWrite(13, LOW);
-      //Serial.println("off");
+     
     }
       
+  // these two lines give the arms the angles from Processing
   myservo_1.write(base_angle);
   myservo_2.write(elbow_angle);
-
-
-
-  // x servo, y sero
-//    myservo_1.write(170);
-//    myservo_2.write(170);
-//    magnet = !magnet;
-//    delay(1000);
-//    myservo_1.write(90);
-//    myservo_2.write(90);
-//    magnet = !magnet;
-//    delay(1000);
-//    myservo_1.write(0);
-//    myservo_2.write(0);
-//    magnet = !magnet;
-//    delay(1000);
-
-   
-
     
 }
 
+// this is a function that takes the data from Processing
+// and parses it into three parts
+// base_angle, elbow_angle, and magnet
+// you don't have to do anything with this at all
 void parseCommand(String com) {
   String part1;
   String part2;
@@ -110,13 +139,18 @@ void parseCommand(String com) {
 
 PROCESSING CODE
 ```
+// again, this(two slashes) is how you make a comment 
+// that the computer will NOT read
+// this is importing the Serial library so we can send data to Arduino
 import processing.serial.*;
+
+// this is declaration of the myPort variable
 Serial myPort;
 
-
+// here we are declaring the variables for the math conversions
+// of x and y into angles
 int adj_mousex, adj_mousey;
 float xpos, ypos, elbow_x, elbow_y;
-
 
 float hyp, 
   hyp_angle, 
@@ -129,37 +163,44 @@ float hyp,
 float inner_arm = 9; // the length of the shoulder
 float outer_arm = 9; // the length of the elbow
 
+// this is a true/false variable for the magnet/LED
 boolean magnet = false;
 
+// setup ONLY runs once
+// we establish variables and drawing canvas size
 void setup() {
+
+  // size is how we set the size of the window we are drawing with the mouse
+  // the two numbers are width and height and you can make them whatever if you 
+  // want a bigger mouse draw window
   size(500, 300);
-  background(148);
+  
+  
+  
+  // the line below is the line you would 'uncomment'(remove the two slashes)
+  // to find the USB port that the Arduino is using
   //printArray(Serial.list());
+  
+  // once you have the [n] address where n is the serial port for the USBmodem
+  // just make sure the line below has that number in the brackets where "11" is right now
+  // these two lines will cause an error if you are not connected to the arduino OR
+  // if you are trying to connect to the wrong serial port
   myPort = new Serial(this, Serial.list()[11], 115200);
   myPort.clear();
-  //frameRate(1);
-
-  background(255);
-
+  
+  // this sets the background color
+  background(255); // set to white at 255
+  
+  // this sets the stroke and fill to black
+  // change these to change the color of the mouse draw
   stroke(0);
   fill(0);
-
-
-  xpos = 4;
-  ypos = 10;
 
 }
 
 void draw() {
 
-  //brush.step_horizontal();
-  //brush.display_horizontal();
-
-
-  
-
-
-
+  // everything down to line 203 is math conversion stuff
   hyp = sqrt(sq(xpos) + sq(ypos));
   hyp_angle = asin(xpos / hyp);
   //println("hyp_angle: " + degrees(hyp_angle));
@@ -175,54 +216,36 @@ void draw() {
 
   base_angle = int(degrees(base_angle));
   elbow_angle = int(degrees(elbow_angle));
-
+  
+  
+  // here we are checking to see if the mouse is being pressed
   if (mousePressed) {
+    // if the mouse is pressed we want to:
+    // turn on the magnet
     magnet = true;
+    
+    // and get x,y coordinates to convert to angles
     xpos = map(mouseX, 0, width, -15, 15);
     ypos = map(mouseY, 0, height, 15, 0);
+    
+    // draw a line where the mouse is moved while being pressed
     line(mouseX, mouseY, pmouseX, pmouseY);
-    //myPort.write(str(elbow_angle)+' '+str(base_angle) + ' ' + magnet + "\n");
+    
   } else {
+    // if the mouse is not being pressed
+    // we turn the magnet off
     magnet = false;
   }
 
-
-  //myPort.write(str(elbow_angle)+' '+str(base_angle) + "\n");
+  // this part converts the math angles into a string to send to the Arduino
   String to_arduino = str(elbow_angle) + ' ' + str(base_angle) + ' ' + magnet;
+  
+  // this part send the data out the USB to the Arduino
   myPort.write(to_arduino + "\n");
  
-  
+  // this just prints out in the console at the bottom of the Processing sketch
   println(to_arduino);
 
-  
-  
-  
-  //println("x: " + xpos);
-  //println("y: " + ypos);
-
-  println("elbow: " + elbow_angle);
-  println("base: " + base_angle);
-  println("magnet: " + magnet);
-  
-  //delay(200);
-  //myPort.clear();
-
-  //line(width/2, height, elbow_x, elbow_y);
-  //line(elbow_x, elbow_y, mouseX, mouseY);
 }
 
-void keyPressed() {
-  if (key =='1') {
-    xpos = 4;
-    ypos = 10;
-  }
-  if (key == '2') {
-    xpos = 8;
-    ypos = 8;
-  }
-  if (key == '3') {
-    xpos = -8;
-    ypos = 8;
-  }
-}
 ```
