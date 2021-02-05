@@ -21,7 +21,7 @@ ARDUINO CODE
 
 ```
 // two slashes like this is what is called a comment
-// anything written after it is NOT read by the computer
+// anything written next to it is NOT read by the computer
 
 // these two lines include libraries for the servo and some math
 #include <Servo.h>
