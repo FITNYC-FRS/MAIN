@@ -9,7 +9,7 @@ Once you have successfully loaded the code onto the Arduino, you will move to th
 1. The LED/magnet should turn on when the mouse is pressed
 2. The arms(servo motors) should move around to the approximate position relative to the size of the drawing window
 
-If either of these does not happen, check the diagram on how to hook it up and make sure the wires are snug enough to create the connections.
+If either of these does not happen, check the [diagram](wiring_diagram_servos_LED.png) on how to hook it up and make sure the wires are snug enough to create the connections.
 
 If you are getting any errors when you run the code for Arduino or Processing, let me know and we can troubleshoot.
 
