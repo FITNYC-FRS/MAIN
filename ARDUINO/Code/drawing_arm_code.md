@@ -101,6 +101,10 @@ void loop() {
   if(magnet){
       //turn on the LED/magnet
       digitalWrite(13, HIGH);
+      
+      // these two lines give the arms the angles from Processing
+      myservo_1.write(base_angle);
+      myservo_2.write(elbow_angle);
      
     } else {
       // if magnet is false, turn off the LED/magnet
@@ -108,9 +112,7 @@ void loop() {
      
     }
       
-  // these two lines give the arms the angles from Processing
-  myservo_1.write(base_angle);
-  myservo_2.write(elbow_angle);
+ 
     
 }
 
