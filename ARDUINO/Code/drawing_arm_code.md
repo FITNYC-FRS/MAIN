@@ -4,7 +4,13 @@ This project is about connecting an Arduino and receiving data from the mouse po
 
 In order for this to work, you will need to copy the ARDUINO CODE below and paste it into a blank Arduino project. Then you will upload the code onto the Arduino by connecting the Arduino with your computer by USB cable. When uploading to the Arduino, make sure the settings are in place for your specific board and that you are uploading through the proper port which is the USBmodem port on your computer.
 
-Next check out this [adafruit page](https://learn.adafruit.com/adafruit-16-channel-pwm-slash-servo-shield/shield-connections) to see how things should be connected. The "base" motor should be connected to PIN 9. The "elbow" motor should be connected to PIN 10. And the LED/magnet should be connected to PIN 13. Follow the wiring in the diagram and if you need further help just let me know.
+Because you need a littel more power for the motors, we are going to use the 16-channel shield from Adafruit. Check out this page [adafruit page](https://learn.adafruit.com/adafruit-16-channel-pwm-slash-servo-shield/overview) to see how to get setup with the shield and how the motors should be connected. It allows us to provide extra power by plugging in a 5V power adapter that drives the motors. The base motor should be connected to the '0' on the shield and the elbow motor should be connected to the '1' on the shield. Like [this](https://learn.adafruit.com/assets/9149) for the base and then on the row next to it for the elbow.
+
+One thing I have yet to see is how to analogWrite to a magnet. I personally do not know a ton about magnets and am learning more as this project continues so if you have other help from an engineer about how to manipulate them with analog then let me know what you find out.
+
+So, for now, check out this [intstructional page](https://arduinogetstarted.com/tutorials/arduino-electromagnetic-lock) with a diagram that has a magnet hooked up with what is called a [5V relay](https://www.amazon.com/Tolako-Arduino-Indicator-Channel-Official/dp/B00VRUAHLE/ref=sr_1_9?crid=1Q78UN2MIIV80&dchild=1&keywords=5v+relay+switch&qid=1615492954&sprefix=5v+relay%2Coffice-products%2C145&sr=8-9). The reason you need this is because the magnet basically holds onto a bunch of electricity and when you stop tuen it off, there is some residual charge that gets pushed back toward the Arduino. The 5V relay will do two things. First, it will provide the extra power you need to properly power the magnet. And secondly, it will protect the Arduino from the kickback charge from the magnet. 
+
+So, in this scenario you have the two motors hooked up to the shield on the '0' and '1' like this [adafruit page](https://learn.adafruit.com/adafruit-16-channel-pwm-slash-servo-shield/shield-connections) shows. This [image](https://learn.adafruit.com/assets/9149) in particular. And a magnet hooked up to PIN 13 like and wired with the 5V relay like above.
 
 Once you have successfully loaded the code onto the Arduino, you will move to the Processing part. Copy and paste the PROCESSING CODE below into a blank Processing sketch, save it, and then run it by pressing the 'play' button at the top of the editor. Once the sketch is running and the Arduino is connected properly(check the Serial port declaration part in the Processing code), you should see a small window open up where you can "draw" with the mouse when you press the mouse button on your trackpad. Two things should happen if everything is hooked up properly.
 
@@ -46,7 +52,7 @@ float base_angle, elbow_angle;
 
 String command;
 
-boolean magnet = false;
+boolean led_magnet = false;
 
 float pulselength_base, pulselength_elbow;
 
@@ -61,8 +67,13 @@ void setup() {
   pwm.setOscillatorFrequency(27000000);
   pwm.setPWMFreq(SERVO_FREQ);  // Analog servos run at ~50 Hz updates
 
+  // setting the onbaord LED to light up when the mouse is pressed
+  // change this number to whatever poin you hook an LED if you still 
+  // want to see when the mouse is pressed after you put the shield on
   pinMode(13, OUTPUT);
   digitalWrite(13, LOW);
+  
+  
   pinMode(A0, INPUT);
   
   
@@ -92,8 +103,8 @@ void loop() {
   // once we have parsed the incoming data from Processing
   // we start by checking to see if the magnet is on(true) or off(false)
   // this says, "if magnet is true, then..."
-  if(magnet){
-      //turn on the LED/magnet
+  if(led_magnet){
+      //turn on the LED
       digitalWrite(13, HIGH);
       
       // these two lines give the arms the angles from Processing
@@ -132,9 +143,9 @@ void parseCommand(String com) {
   elbow_angle = part1.toInt();
   base_angle = part2.toInt();
   if(part3 == "true"){
-    magnet = true;
+    led_magnet = true;
   } else {
-    magnet = false;
+    led_magnet = false;
     }
   
 }
