@@ -73,9 +73,11 @@ void setup() {
   pinMode(13, OUTPUT);
   digitalWrite(13, LOW);
   
-  
+  // set the pinMode for the potentiometer
   pinMode(A0, INPUT);
   
+  // set the pinMode for the analog magnet
+  pinMode(A1, OUTPUT);
   
   delay(10);
 
@@ -118,10 +120,10 @@ void loop() {
     }
 
   
-    
+  // this is where we are reading from the potentiometer to get something to send to the magnet  
   potentiometer_reading = analogRead(A0);
-  potentiometer_reading = map(potentiometer_reading, 0, 1023, SERVOMIN, SERVOMAX);
-  pwm.setPWM(3,0,potentiometer_reading);
+  // send out the analog reading from the potentiometer to the magnet 
+  analogWrite(A1, potentiometer_reading);
 
 }
 
