@@ -225,6 +225,10 @@ void draw() {
       // turn on the magnet
        magnet = true;
     
+      // and get x,y coordinates to convert to angles
+      xpos = map(mouseX, 0, width, -15, 15);
+      ypos = map(mouseY, 0, height, 15, 0);
+      
       // everything down to line 203 is math conversion stuff
       hyp = sqrt(sq(xpos) + sq(ypos));
       hyp_angle = asin(xpos / hyp);
@@ -241,10 +245,6 @@ void draw() {
 
       base_angle = int(degrees(base_angle));
       elbow_angle = int(degrees(elbow_angle));
-    
-      // and get x,y coordinates to convert to angles
-      xpos = map(mouseX, 0, width, -15, 15);
-      ypos = map(mouseY, 0, height, 15, 0);
     
       // draw a line where the mouse is moved while being pressed
       line(mouseX, mouseY, pmouseX, pmouseY);
