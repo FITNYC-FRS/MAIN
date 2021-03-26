@@ -39,10 +39,10 @@ Adafruit_PWMServoDriver pwm = Adafruit_PWMServoDriver();
 // want these to be as small/large as possible without hitting the hard stop
 // for max range. You'll have to tweak them as necessary to match the servos you
 // have!
-#define SERVOMIN  150 // This is the 'minimum' pulse length count (out of 4096)
-#define SERVOMAX  440 // This is the 'maximum' pulse length count (out of 4096)
-#define USMIN  600 // This is the rounded 'minimum' microsecond length based on the minimum pulse of 150
-#define USMAX  2400 // This is the rounded 'maximum' microsecond length based on the maximum pulse of 600
+#define SERVOMIN  900 // This is the 'minimum' pulse length count (out of 4096)
+#define SERVOMAX  2100 // This is the 'maximum' pulse length count (out of 4096)
+#define USMIN  900 // This is the rounded 'minimum' microsecond length based on the minimum pulse of 150
+#define USMAX  2100 // This is the rounded 'maximum' microsecond length based on the maximum pulse of 600
 #define SERVO_FREQ 50 // Analog servos run at ~50 Hz updates
 
 // our servo # counter
@@ -243,7 +243,7 @@ void draw() {
       elbow_angle = (PI - outer_angle);
       base_angle = abs(hyp_angle - inner_angle);
 
-      base_angle = int(degrees(base_angle));
+      base_angle = 180 - int(degrees(base_angle));
       elbow_angle = int(degrees(elbow_angle));
     
       // draw a line where the mouse is moved while being pressed
