@@ -99,8 +99,8 @@ void loop() {
     }
   }
 
-  pulselength_base = map(base_angle, 0, 180, SERVOMIN, SERVOMAX);
-  pulselength_elbow = map(elbow_angle, 0, 180, SERVOMIN, SERVOMAX);
+  pulselength_base = map(base_angle, 0, 200, SERVOMIN, SERVOMAX);
+  pulselength_elbow = map(elbow_angle, 0, 200, SERVOMIN, SERVOMAX);
   
   // once we have parsed the incoming data from Processing
   // we start by checking to see if the magnet is on(true) or off(false)
